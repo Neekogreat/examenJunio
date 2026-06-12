@@ -66,15 +66,6 @@ jobs:
       - name: Code checkout (Manifiesto K8s)
         uses: actions/checkout@v4
 
-      - name: Set up kubectl
-        run: |
-          # Install kubectl if not already available
-          if ! command -v kubectl &> /dev/null; then
-            curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-            chmod +x kubectl
-            sudo mv kubectl /usr/local/bin/
-          fi
-
       - name: Update deployment image
         run: |
           # Update the deployment with the new image using abbreviated SHA
