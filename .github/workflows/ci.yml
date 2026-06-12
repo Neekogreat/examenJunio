@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.IMAGE_NAME }}
+  IMAGE_NAME: ${{ vars.IMAGE_NAME }}
   REGISTRY: ${{ vars.REGISTRY }}
   
 jobs:
