@@ -69,7 +69,6 @@ jobs:
       - name: Update deployment image
         run: |
           # Update the deployment with the new image using abbreviated SHA
-          $sha = $env:GITHUB_SHA.Substring(0, 7)
           kubectl set image deployment/${{ env.IMAGE_NAME }} ${{ env.IMAGE_NAME }}=${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME}}/${{ env.IMAGE_NAME }}:latest
           
       - name: Wait for deployment rollout
