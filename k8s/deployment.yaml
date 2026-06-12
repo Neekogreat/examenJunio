@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mundial2026
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mundial2026
+  template:
+    metadata:
+      labels:
+        app: mundial2026
+    spec:
+      containers:
+      - name: mundial2026
+        image: mundial2026:v1.0
+        imagePullPolicy: Always  #Cambiar a Never             # No buscar en registry externo (imagen local)
+        ports:
+        - containerPort: 8080
+        envFrom:                             # Inyectar todo un ConfigMap como variables
+        - configMapRef:
+            name: mundial2026-config
