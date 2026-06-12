@@ -15,7 +15,7 @@ spec:
       containers:
       - name: mundial2026
         image: mundial2026:v1.0
-        imagePullPolicy: Always  #Cambiar a Never             # No buscar en registry externo (imagen local)
+        imagePullPolicy: Never               # No buscar en registry externo (imagen local)
         ports:
         - containerPort: 8080
         envFrom:                             # Inyectar todo un ConfigMap como variables
