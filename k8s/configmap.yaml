@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: mundial2026-config
-data:
-  APP_DATA_PATH: data                              # Variables de entorno
