@@ -38,7 +38,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ vars.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ vars.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.IMAGE_NAME }}
           tags: |
             type=ref,event=branch
             type=ref,event=tag
