@@ -130,6 +130,6 @@
   { "nombre": "Angelo Stiller",      "pais": "Alemania",  "posicion": "Delantero",      "dorsal": 18 },
   { "nombre": "Deniz Undav",         "pais": "Alemania",  "posicion": "Delantero",      "dorsal": 9  },
   { "nombre": "Nick Woltemade",      "pais": "Alemania",  "posicion": "Delantero",      "dorsal": 21 },
-  { "nombre": "Jamal Musiala",       "pais": "Alemania",  "posicion": "Delantero",      "dorsal": 13 }
+  { "nombre": "Jamal Musiala",       "pais": "Alemania",  "posicion": "Delantero",      "dorsal": 13 },
   { "nombre": "Sergio Ramos",        "pais": "España",    "posicion": "Defensa",        "dorsal": 97 }
 ]
